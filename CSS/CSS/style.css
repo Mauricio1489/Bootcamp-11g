@@ -1,0 +1,65 @@
+h1{
+    color: peru;
+}
+
+h1{
+    color: red;
+}
+
+*{
+    color: rosybrown;
+}
+
+li{
+    text-decoration: underline red;
+}
+
+/*selector anidado*/
+
+#lista1 li{
+    background-color: green;
+}
+
+#lista1 li ul li{
+    background-color: indigo;
+}
+/*slector de primer nivel*/
+#lista1 > li{
+    background-color: khaki;
+}
+
+.lista-tipo2 li.active{
+    background: skyblue;
+    padding: 1rem;
+    text-decoration: underline;
+}
+
+.lista-tipo2 li.active ~ li{
+    background-color: peru;
+}
+
+/*adyacente*/
+.lista-tipo2 li.active + li{
+    background-color: rgb(47, 13, 236);
+}
+
+.lista-tipo3 li + li{
+    background-color: purple;
+}
+
+.lista-tipo4 li:nth-of-type(odd){
+    font-size: 30px;
+}
+
+.lista-tipo4 li:nth-of-type(even){
+    font-size: 15px;
+}
+
+.lista-tipo4 li:nth-of-type(2n){
+    background-color: red;
+}
+
+.lista-tipo4 li:not(:last-of-type){
+    text-decoration: limegreen;
+}
+
